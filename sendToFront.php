@@ -1,6 +1,8 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 $contents=file_get_contents("data.json");
 $contentsDecoded = json_decode($contents);
-echo $contents;
+$size=count($contentsDecoded);
 
+echo $contents;
 ?>
